@@ -1,0 +1,36 @@
+<header class="flex items-center justify-between border-b border-surface-low px-5 py-3">
+
+  <span class="block md:hidden text-body-md font-medium uppercase">Taskly</span>
+
+  <div class="flex items-center gap-3 ml-auto">
+    <div class="text-right">
+      <p class="text-body-md">{{user?.name}}</p>
+      <p class="text-label-sm text-primary uppercase">{{user?.department}}</p>
+    </div>
+    <div class="relative">
+      <div (click)="toggleDropdown()" class="w-10 h-10 rounded bg-primary flex items-center pl-2 text-white cursor-pointer">
+        {{initials}}
+      </div>
+
+      @if(isDropdownOpen){
+
+      <div (click)="toggleDropdown()" class="fixed inset-0 z-10"></div>
+
+      <div class="absolute right-0 mt-2 w-48 bg-formBg border border-surface-low rounded-md shadow-md z-20">
+
+        <button (click)="logout()"
+          class="w-full flex items-center gap-2 px-4 py-3 text-body-sm text-red-500 hover:bg-surface-highest">
+          <i class="fas fa-arrow-right-from-bracket"></i>
+          <span>Logout</span>
+        </button>
+
+        @if(logoutError){
+        <p class="px-4 py-2 text-label-sm text-red-500">{{ logoutError }}</p>
+        }
+
+      </div>
+      }
+    </div>
+
+  </div>
+</header>
