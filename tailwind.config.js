@@ -4,21 +4,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#003D9B",
-        "primary-container": "#0052CC",
-        "surface-highest": "#D7E2FF",
-        "surface-low": "#F1F3FF",
-        background: "#F9F9FF",
-        formBg: "#FFFFFF",
-        "custom-gray": "#737685",
+        primary: "var(--color-primary)",
+        "primary-container": "var(--color-primary-container)",
+        "surface-highest": "var(--color-surface-highest)",
+        "surface-low": "var(--color-surface-low)",
+        background: "var(--color-background)",
+        surface: "var(--color-suface)",
+        "custom-gray": "var(--color-custom-gray)",
         slate: {
-          dark: "#041B3C",
-          medium: "#4F5F7B",
-          light: "#C3C6D6",
+          dark: "#var(--color-slate-dark)",
+          medium: "#var(--color-slate-mid)",
+          light: "#var(--color-slate-light)",
         },
-        success: "#82F9BE",
-        error: "#BA1A1A",
-        warning: "#FFB300",
+        success: "var(--color-success)",
+        error: "#var(--color-error)",
+        warning: "var(--color-warning)",
       },
 
       fontFamily: {
@@ -26,11 +26,11 @@ module.exports = {
       },
 
       fontSize: {
-        "display-lg": ["56px", { lineHeight: "56px", fontWeight: "700" }],
-        "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "600" }],
-        "title-md": ["27px", { lineHeight: "27px", fontWeight: "500" }],
-        "body-md": ["14px", { lineHeight: "22.75px", fontWeight: "400" }],
-        "label-sm": ["11px", { lineHeight: "16.5px", fontWeight: "400" }],
+        "display-lg": ["3.5rem", { lineHeight: "3.5rem" , fontWeight: "700" }],
+        "headline-lg": ["2rem", { lineHeight: "2.5rem" , fontWeight: "700" }],
+        "title-md": ["1.687rem", { lineHeight: "1.6875rem" , fontWeight: "600" }],
+        "body-md": ["0.875rem", { lineHeight: "1.421875rem" , fontWeight: "400" }],
+        "label-sm": ["0.6875rem", { lineHeight: "1.03125rem" , fontWeight: "700", letterSpacing: "0.05em" } ],
       },
     },
   },

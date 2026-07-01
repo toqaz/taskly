@@ -13,6 +13,10 @@
   --color-slate-mid: #4f5f7b;
   --color-slate-light: #c3c6d6;
   --color-custom-gray: #737685;
+  --color-custom-suface: #FFFFFF;
+  --color-custom-error: #BA1A1A;
+  --color-custom-success: #82F9BE;
+  --color-custom-warning: #FFB300;
 }
 
 @layer components {
